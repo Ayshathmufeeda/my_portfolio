@@ -1,0 +1,33 @@
+/* Additional custom styles for portfolio */
+
+/* Example: Card hover effect */
+.card {
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(60,0,90,0.08);
+  border-radius: 16px;
+  background: #fff;
+}
+.card:hover {
+  box-shadow: 0 8px 32px 0 rgba(60,0,90,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* Example: Animated underline for nav links */
+.nav-links a {
+  position: relative;
+  overflow: hidden;
+}
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed 0%, #f59e42 100%);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
